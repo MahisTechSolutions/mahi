@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
         integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
 
     <title>Mahi's Tech Solution's</title>
     <style>
@@ -53,7 +53,12 @@
             /* Adjust as needed */
             animation:
                 typing 3.5s steps(30, end),
-                blink-caret .5s step-end infinite; 
+                blink-caret .5s step-end infinite;
+        }
+
+        .login{
+            margin-left: 15px;
+            margin-right: 5px;
         }
 
         /* The typing effect */
@@ -85,7 +90,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#"> <img class="logo-image" src="m.png" alt="M">
+        <a class="navbar-brand" href="#"> <img class="logo-image" src="./img/m.png" alt="M">
             <img class="logo-image" src="./img/t2.png" alt="T">
             <img class="logo-image" src="./img/s1.png" alt="S">
         </a>
@@ -124,13 +129,13 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
             </form>
 
-            <p class="gap"><button type="button" class="btn btn-info"> </button></p>
+            <!-- <p class="gap"><button type="button" class="btn btn-info"> </button></p> -->
             <div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#staticBackdrop">
+                <button type="button" class="btn btn-warning login data-toggle="modal" data-target="#staticBackdrop">
                     Login
                 </button>
 
@@ -263,6 +268,7 @@
         </div>
     </nav>
 
+    
     <!-- carousel -->
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -479,11 +485,7 @@
         </div>
         <div class="spinner-border text-warning" role="status">
             <span class="sr-only">Loading...</span>
-        </div>
-        <div class="spinner-border text-info" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-        <div class="spinner-border text-dark" role="status">
+        </div></html>">
             <span class="sr-only">Loading...</span>
         </div>
         <div class="spinner-border text-primary" role="status">
@@ -585,7 +587,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-
 
 </body>
 
